@@ -1,0 +1,120 @@
+body,html{
+    margin:0;
+    padding:0;
+    font-family: 'Nunito';
+  
+}
+.header_{
+  height:450px;
+  width: 100%;
+  background:rgb(62,57,107);
+  position: relative;
+
+  }
+  .container{
+    width: 90%;
+    margin: auto;
+  }
+  .container nav{
+    height: 100px;
+    float:right;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+  }
+  .container h1{
+    color:#ffffff;
+    font-size:28px;
+  }
+  .header_texture{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background: url('https://images.unsplash.com/photo-1544148103-0773bf10d330?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80') center no-repeat;
+    background-size: cover;
+  }
+  .container li{
+    display:inline;
+    padding: 0 20px 0 20px;
+  }
+  .container a{
+    color:#faf6f6;
+    font-weight:bold;
+    text-decoration:none ;
+  }
+  .container a:hover{
+    color:#cccccc;
+    font-weight:bold;
+  }
+  #client{
+    width:100%;
+    border-top: 1px solid rgba(58,58,58,0.03);
+    border-bottom: 1px solid rgba(58,58,58,0.03);
+    background-image: url("../images/bg.png");
+    background-position: center;
+    background-size: 1000px;
+  }
+  .client-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .c-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:20px 0px;
+  }
+  .client-box {
+    width:300px;
+    height: 300px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 5px 10px 30px rgba(0,0,0,0.08);
+  }
+  .client-box img{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+  }
+  .client-box strong{
+    color:#1c3548;
+    margin:0px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top:10px;
+  }
+  .client-box p{
+    color:#3c7a7c;
+    font-size: 0.9rem;
+    margin:0px;
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+    display: -webkit-box;
+    max-width: 80%;
+    -webkit-line-clamp:4;
+    -webkit-box-orient:vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .client-box:hover{
+    transform: translateY(-10px);
+    box-shadow: 5px 10px 30px rgba(0,0,0,0.1);
+      background-color: #70a5a7;
+    transition: all ease 0.2s;
+  }
